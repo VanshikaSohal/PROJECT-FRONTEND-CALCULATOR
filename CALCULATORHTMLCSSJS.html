@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+    <title>CALCULATOR</title>
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* full screen height */
+  margin: 0;      /* remove default margin */
+}
+    .buttonbig{
+        width:340px;
+        height:780px;
+        background-color: rgb(226, 245, 220);
+        margin:auto;/*this centers it horizontally*/
+       position:relative;
+    }
+    .buttons{
+        width:100px;
+        height:100px;
+        display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #buttonK{
+        width:320px;
+        height:100px;
+        position:absolute;
+        top:10px;
+        left:10px;
+    }
+    #buttonC{
+        font-size:50px;
+        position:absolute;
+        top:120px;
+        left:10px;
+    }
+    #button1{
+       font-size:50px;
+        position:absolute;
+        top:120px;
+        left:120px;
+    }
+     #button2{
+       font-size:50px;
+        position:absolute;
+        top:120px;
+        left:230px;
+    }
+     #buttonplus{
+       font-size:50px;
+        position:absolute;
+        top:230px;
+        left:10px;
+    }
+   #button3{
+       font-size:50px;
+        position:absolute;
+        top:230px;
+        left:120px;
+    }
+    #button4{
+       font-size:50px;
+        position:absolute;
+        top:230px;
+        left:230px;
+    }
+    #buttonminus{
+       font-size:50px;
+        position:absolute;
+        top:340px;
+        left:10px;
+    }
+    #button5{
+       font-size:50px;
+        position:absolute;
+        top:340px;
+        left:120px;
+    }
+    #button6{
+       font-size:50px;
+        position:absolute;
+        top:340px;
+        left:230px;
+    }
+    #buttonmulti{
+       font-size:50px;
+        position:absolute;
+        top:450px;
+        left:10px;
+    }
+    #button7{
+       font-size:50px;
+        position:absolute;
+        top:450px;
+        left:120px;
+    }
+    #button8{
+       font-size:50px;
+        position:absolute;
+        top:450px;
+        left:230px;
+    }
+    #buttondivi{
+       font-size:50px;
+        position:absolute;
+        top:560px;
+        left:10px;
+    }
+    #buttonet{
+       font-size:50px;
+        position:absolute;
+        top:560px;
+        left:120px;
+    }
+    #button9{
+       font-size:50px;
+        position:absolute;
+        top:560px;
+        left:230px;
+    }
+    #button0{
+       font-size:50px;
+        position:absolute;
+        top:670px;
+        left:65px;
+    }
+    #buttondot{
+       font-size:50px;
+        position:absolute;
+        top:670px;
+        left:175px;
+    }
+</style>
+</head>
+<body>
+    <div class="buttonbig" >
+    <button class="buttons" id="buttonK">
+    </button>
+    <button class="buttons" id="buttonC" onclick="handleclear()">C</button>
+    <button class="buttons" id="button1" onclick="handlenumber(1)">1</button>
+    <button class="buttons" id="button2" onclick="handlenumber(2)" >2</button>
+    <button class="buttons" id="buttonplus" onclick="firstNumber('+')" >+</button>
+    <button class="buttons" id="button3" onclick="handlenumber(3)">3</button>
+    <button class="buttons" id="button4" onclick="handlenumber(4)" >4</button>
+    <button class="buttons" id="buttonminus"onclick="firstNumber('-')">-</button>
+    <button class="buttons" id="button5" onclick="handlenumber(5)">5</button>
+    <button class="buttons" id="button6" onclick="handlenumber(6)">6</button>
+    <button class="buttons" id="buttonmulti"onclick="firstNumber('*')">*</button>
+    <button class="buttons" id="button7" onclick="handlenumber(7)">7</button>
+    <button class="buttons" id="button8" onclick="handlenumber(8)">8</button>
+    <button class="buttons" id="buttondivi"onclick="firstNumber('/')">/</button>
+    <button class="buttons" id="buttonet" onclick="handleEqual()" >=</button>
+    <button class="buttons" id="button9" onclick="handlenumber(9)">9</button>
+    <button class="buttons" id="button0" onclick="handlezero()">0</button>
+    <button class="buttons" id="buttondot" onclick="handledot()">.</button>
+    </div>
+    <script src="CALCULATORHTMLCSSJS.js"></script>
+    </body>
+    </html>
