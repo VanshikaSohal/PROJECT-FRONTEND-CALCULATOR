@@ -24,15 +24,15 @@ This is a basic calculator web app that performs simple arithmetic operations. I
 ## 📁 Project Structure
 
 calculator/
-├── index.html Main webpage
-├── style.css Styles and layout
+├── CALCULATORHTMLCSSJS.html
+├── CALCULATORHTMLCSSJS.js 
 
 
 
 ## 🚀 How to Run
 
 1. Clone the repository:
-   ```bash
+   
    git clone https://github.com/VanshikaSohal/calculator.git
 Open index.html in any browser.
 No setup or installation required.
